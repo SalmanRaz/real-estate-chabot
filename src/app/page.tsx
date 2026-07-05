@@ -112,141 +112,153 @@ export default function Home() {
         </div>
       </header>
 
-      <main id="top" className="relative overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,_#06111e_0%,_#0b1828_34%,_#f7f2eb_34%,_#f7f2eb_100%)]" />
-        <div className="absolute inset-x-0 top-0 -z-10 h-[44rem] bg-[radial-gradient(circle_at_16%_16%,rgba(251,191,36,0.22),transparent_18%),radial-gradient(circle_at_82%_14%,rgba(56,189,248,0.2),transparent_22%),radial-gradient(circle_at_56%_54%,rgba(148,163,184,0.18),transparent_28%)]" />
-        <div className="absolute inset-x-0 top-0 -z-10 h-[40rem] opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:64px_64px]" />
+      <main id="top" className="overflow-hidden bg-[#f7f2eb]">
+        <div className="relative overflow-hidden bg-[#06111e]">
+          <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_16%_16%,rgba(251,191,36,0.28),transparent_20%),radial-gradient(circle_at_82%_14%,rgba(56,189,248,0.26),transparent_24%),radial-gradient(circle_at_56%_80%,rgba(167,139,250,0.2),transparent_30%)]" />
+          <div className="pointer-events-none absolute inset-0 -z-10 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:64px_64px]" />
 
-        <section className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-6 pb-22 pt-12 sm:px-8 lg:px-12 lg:pb-24 lg:pt-16">
-          <div className="grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
-            <div className="space-y-8">
-              <div className="space-y-5">
-                <p className="inline-flex rounded-full border border-sky-300/15 bg-sky-300/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-sky-200/90">
-                  Premium Property Group
-                </p>
-                <h1 className="max-w-4xl font-serif text-5xl leading-[0.92] text-white sm:text-6xl lg:text-[5.5rem]">
-                  Answer
-                  <span className="bg-[linear-gradient(135deg,#fde68a,#f59e0b)] bg-clip-text text-transparent">
-                    {" "}property questions{" "}
-                  </span>
-                  instantly and turn
-                  <span className="bg-[linear-gradient(135deg,#7dd3fc,#c4b5fd)] bg-clip-text text-transparent">
-                    {" "}curious visitors{" "}
-                  </span>
-                  into qualified buyers.
-                </h1>
-                <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-                  Aurora Estates markets premium apartments, villas, and waterfront
-                  homes. Our AI assistant helps visitors understand listings,
-                  neighborhoods, payment plans, and visit scheduling while
-                  capturing qualified leads for our agents, 24/7.
-                </p>
-                <div className="flex flex-wrap gap-3 text-sm text-slate-200">
-                  <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                    Buyer-friendly pricing answers
-                  </span>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                    Visit scheduling intent
-                  </span>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-                    CRM-ready lead capture
-                  </span>
+          <section className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-6 pb-22 pt-12 sm:px-8 lg:px-12 lg:pb-24 lg:pt-16">
+            <div className="grid gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
+              <div className="space-y-8">
+                <div className="space-y-5">
+                  <p className="inline-flex rounded-full border border-sky-300/40 bg-sky-400/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.32em] text-sky-100 shadow-[0_0_24px_rgba(56,189,248,0.15)]">
+                    Premium Property Group
+                  </p>
+                  <h1 className="max-w-4xl font-serif text-5xl leading-[0.92] text-white sm:text-6xl lg:text-[5.5rem]">
+                    Answer
+                    <span className="bg-[linear-gradient(135deg,#fcd34d,#f97316)] bg-clip-text text-transparent">
+                      {" "}property questions{" "}
+                    </span>
+                    instantly and turn
+                    <span className="bg-[linear-gradient(135deg,#38bdf8,#a78bfa)] bg-clip-text text-transparent">
+                      {" "}curious visitors{" "}
+                    </span>
+                    into qualified buyers.
+                  </h1>
+                  <p className="max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
+                    Aurora Estates markets premium apartments, villas, and waterfront
+                    homes. Our AI assistant helps visitors understand listings,
+                    neighborhoods, payment plans, and visit scheduling while
+                    capturing qualified leads for our agents, 24/7.
+                  </p>
+                  <div className="flex flex-wrap gap-3 text-sm text-slate-200">
+                    <span className="rounded-full border border-white/15 bg-white/8 px-4 py-2">
+                      Buyer-friendly pricing answers
+                    </span>
+                    <span className="rounded-full border border-white/15 bg-white/8 px-4 py-2">
+                      Visit scheduling intent
+                    </span>
+                    <span className="rounded-full border border-white/15 bg-white/8 px-4 py-2">
+                      CRM-ready lead capture
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex flex-col gap-4 sm:flex-row">
-                <Link
-                  href="#properties"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f59e0b] px-6 py-3.5 text-sm font-semibold text-slate-950 shadow-[0_12px_34px_rgba(245,158,11,0.28)] transition-transform duration-200 hover:-translate-y-0.5"
-                >
-                  Explore featured listings
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-                <Link
-                  href="#contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/16 bg-white/8 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur transition-colors duration-200 hover:bg-white/12"
-                >
-                  Talk to an agent
-                </Link>
-              </div>
-
-              <div className="grid gap-4 sm:grid-cols-3">
-                {portfolioHighlights.map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.1),rgba(255,255,255,0.04))] p-5 shadow-[0_16px_34px_rgba(2,6,23,0.18)] backdrop-blur-md"
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <Link
+                    href="#properties"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-[#f59e0b] px-6 py-3.5 text-sm font-semibold text-slate-950 shadow-[0_12px_34px_rgba(245,158,11,0.35)] transition-transform duration-200 hover:-translate-y-0.5"
                   >
-                    <p className="text-3xl font-semibold text-white">{item.value}</p>
-                    <p className="mt-2 text-sm leading-6 text-slate-200">{item.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="absolute -left-8 top-8 hidden h-36 w-36 rounded-full bg-amber-300/15 blur-3xl lg:block" />
-              <div className="overflow-hidden rounded-[2rem] border border-white/12 bg-[linear-gradient(180deg,rgba(15,23,42,0.86),rgba(30,41,59,0.82))] shadow-[0_30px_120px_rgba(2,6,23,0.45)] backdrop-blur-xl">
-                <div className="h-56 bg-[linear-gradient(135deg,#1e3a8a_0%,#0f172a_38%,#5b21b6_100%)] p-6">
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200/80">
-                        Signature listing
-                      </p>
-                      <h2 className="mt-3 font-serif text-3xl text-white">
-                        Aurora Bay Residences
-                      </h2>
-                      <p className="mt-3 max-w-sm text-sm leading-7 text-slate-200">
-                        Waterfront apartments with marina views, concierge service,
-                        and payment-plan guidance handled directly inside the chatbot.
-                      </p>
-                    </div>
-                    <div className="rounded-2xl bg-white/10 p-3 text-amber-200">
-                      <Landmark className="h-5 w-5" />
-                    </div>
-                  </div>
-                  <div className="mt-6 flex flex-wrap gap-3 text-sm text-white">
-                    <span className="rounded-full bg-white/10 px-3 py-1.5">From 1.45M AED</span>
-                    <span className="rounded-full bg-white/10 px-3 py-1.5">1-3 Beds</span>
-                    <span className="rounded-full bg-white/10 px-3 py-1.5">Marina District</span>
-                  </div>
+                    Explore featured listings
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    href="#contact"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur transition-colors duration-200 hover:bg-white/16"
+                  >
+                    Talk to an agent
+                  </Link>
                 </div>
 
-                <div className="p-6">
-                  <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.28em] text-amber-200/80">
-                        Visitor experience
-                      </p>
-                      <h2 className="mt-2 text-2xl font-semibold text-white">
-                        What the assistant does on the site
-                      </h2>
+                <div className="grid gap-4 sm:grid-cols-3">
+                  {portfolioHighlights.map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-[1.75rem] border border-white/15 bg-[linear-gradient(180deg,rgba(255,255,255,0.14),rgba(255,255,255,0.05))] p-5 shadow-[0_16px_34px_rgba(2,6,23,0.3)] backdrop-blur-md"
+                    >
+                      <p className="text-3xl font-semibold text-white">{item.value}</p>
+                      <p className="mt-2 text-sm leading-6 text-slate-200">{item.label}</p>
                     </div>
-                    <Building2 className="h-10 w-10 rounded-2xl bg-white/8 p-2.5 text-sky-200" />
-                  </div>
+                  ))}
+                </div>
+              </div>
 
-                  <div className="mt-6 grid gap-4">
-                    {valueProps.map(({ icon: Icon, title, copy }) => (
-                      <div
-                        key={title}
-                        className="rounded-[1.5rem] border border-white/8 bg-white/[0.045] p-4 transition-transform duration-200 hover:-translate-y-0.5"
-                      >
-                        <div className="flex items-start gap-4">
-                          <div className="rounded-2xl bg-white/8 p-3 text-amber-200">
-                            <Icon className="h-5 w-5" />
-                          </div>
-                          <div>
-                            <h3 className="text-base font-semibold text-white">{title}</h3>
-                            <p className="mt-2 text-sm leading-6 text-slate-300">{copy}</p>
-                          </div>
-                        </div>
+              <div className="relative">
+                <div className="absolute -left-8 top-8 hidden h-36 w-36 rounded-full bg-amber-300/20 blur-3xl lg:block" />
+                <div className="absolute -right-6 bottom-10 hidden h-40 w-40 rounded-full bg-sky-400/15 blur-3xl lg:block" />
+                <div className="overflow-hidden rounded-[2rem] border border-white/15 bg-[linear-gradient(180deg,rgba(15,23,42,0.92),rgba(30,41,59,0.9))] shadow-[0_30px_120px_rgba(2,6,23,0.55)] backdrop-blur-xl">
+                  <div className="h-56 bg-[linear-gradient(135deg,#1e3a8a_0%,#0f172a_38%,#6d28d9_100%)] p-6">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-200">
+                          Signature listing
+                        </p>
+                        <h2 className="mt-3 font-serif text-3xl text-white">
+                          Aurora Bay Residences
+                        </h2>
+                        <p className="mt-3 max-w-sm text-sm leading-7 text-slate-200">
+                          Waterfront apartments with marina views, concierge service,
+                          and payment-plan guidance handled directly inside the chatbot.
+                        </p>
                       </div>
-                    ))}
+                      <div className="rounded-2xl bg-white/15 p-3 text-amber-200">
+                        <Landmark className="h-5 w-5" />
+                      </div>
+                    </div>
+                    <div className="mt-6 flex flex-wrap gap-3 text-sm text-white">
+                      <span className="rounded-full bg-white/15 px-3 py-1.5">From 1.45M AED</span>
+                      <span className="rounded-full bg-white/15 px-3 py-1.5">1-3 Beds</span>
+                      <span className="rounded-full bg-white/15 px-3 py-1.5">Marina District</span>
+                    </div>
+                  </div>
+
+                  <div className="p-6">
+                    <div className="flex items-center justify-between border-b border-white/10 pb-4">
+                      <div>
+                        <p className="text-sm uppercase tracking-[0.28em] text-amber-200">
+                          Visitor experience
+                        </p>
+                        <h2 className="mt-2 text-2xl font-semibold text-white">
+                          What the assistant does on the site
+                        </h2>
+                      </div>
+                      <Building2 className="h-10 w-10 rounded-2xl bg-white/12 p-2.5 text-sky-200" />
+                    </div>
+
+                    <div className="mt-6 grid gap-4">
+                      {valueProps.map(({ icon: Icon, title, copy }, index) => {
+                        const accents = [
+                          "bg-amber-400/20 text-amber-200",
+                          "bg-sky-400/20 text-sky-200",
+                          "bg-violet-400/20 text-violet-200",
+                          "bg-emerald-400/20 text-emerald-200",
+                        ];
+                        return (
+                          <div
+                            key={title}
+                            className="rounded-[1.5rem] border border-white/10 bg-white/[0.06] p-4 transition-transform duration-200 hover:-translate-y-0.5 hover:bg-white/[0.09]"
+                          >
+                            <div className="flex items-start gap-4">
+                              <div
+                                className={`rounded-2xl p-3 ${accents[index % accents.length]}`}
+                              >
+                                <Icon className="h-5 w-5" />
+                              </div>
+                              <div>
+                                <h3 className="text-base font-semibold text-white">{title}</h3>
+                                <p className="mt-2 text-sm leading-6 text-slate-300">{copy}</p>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         <section
           id="properties"
