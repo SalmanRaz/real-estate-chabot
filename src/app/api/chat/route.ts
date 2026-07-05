@@ -3,6 +3,11 @@ import { buildContextBlock } from "@/lib/rag";
 import { defaultModel, openrouter } from "@/lib/openrouter";
 import { ensureSchema, saveMessage, touchSession } from "@/lib/db";
 
+// A cold start needs to download the local embedding model plus round-trip
+// the database; Vercel's default timeout can be too short for that first
+// request, so extend it up to the Hobby-plan ceiling.
+export const maxDuration = 60;
+
 function extractLatestUserMessage(messages: UIMessage[]) {
   const latestMessage = [...messages].reverse().find((message) => {
     return message.role === "user";

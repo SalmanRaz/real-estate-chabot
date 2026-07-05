@@ -1,4 +1,13 @@
-import { pipeline } from "@xenova/transformers";
+import os from "node:os";
+import path from "node:path";
+import { env, pipeline } from "@xenova/transformers";
+
+// Serverless platforms like Vercel only allow writes to a temp directory
+// (the rest of the filesystem is read-only). os.tmpdir() resolves to that
+// writable temp directory in production and to a normal temp folder when
+// running locally, so this works on both without hardcoding a Linux path.
+env.cacheDir = path.join(os.tmpdir(), "transformers-cache");
+env.allowLocalModels = false;
 
 type FeatureExtractor = (
   text: string,
