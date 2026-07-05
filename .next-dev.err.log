@@ -1,0 +1,2117 @@
+⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result.
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+⨯ ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  [90m13 |[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m14 |[0m [36mimport[0m { [33mChatShowcase[0m } [36mfrom[0m [32m"@/components/chat-showcase"[0m;
+[31m[1m>[0m [90m15 |[0m [36mimport[0m {
+  [90m   |[0m [31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   dashboardMetrics,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m   featuredProperties,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m18 |[0m   knowledgeBaseDocuments,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m19 |[0m   portfolioHighlights,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m20 |[0m   serviceCards,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m21 |[0m   useCaseTimeline,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m22 |[0m } [36mfrom[0m [32m"@/lib/knowledge-base"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m23 |[0m
+  [90m24 |[0m [36mconst[0m stack = [
+  [90m25 |[0m   [32m"Next.js"[0m,
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+⨯ ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  [90m13 |[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m14 |[0m [36mimport[0m { [33mChatShowcase[0m } [36mfrom[0m [32m"@/components/chat-showcase"[0m;
+[31m[1m>[0m [90m15 |[0m [36mimport[0m {
+  [90m   |[0m [31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   dashboardMetrics,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m   featuredProperties,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m18 |[0m   knowledgeBaseDocuments,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m19 |[0m   portfolioHighlights,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m20 |[0m   serviceCards,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m21 |[0m   useCaseTimeline,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m22 |[0m } [36mfrom[0m [32m"@/lib/knowledge-base"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m23 |[0m
+  [90m24 |[0m [36mconst[0m stack = [
+  [90m25 |[0m   [32m"Next.js"[0m,
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[browser] Uncaught Error: ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/page.tsx:15:1)
+    at <unknown> (Error: (./src/app/page.tsx:15:1)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+⨯ ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  [90m13 |[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m14 |[0m [36mimport[0m { [33mChatShowcase[0m } [36mfrom[0m [32m"@/components/chat-showcase"[0m;
+[31m[1m>[0m [90m15 |[0m [36mimport[0m {
+  [90m   |[0m [31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   dashboardMetrics,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m   featuredProperties,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m18 |[0m   knowledgeBaseDocuments,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m19 |[0m   portfolioHighlights,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m20 |[0m   serviceCards,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m21 |[0m   useCaseTimeline,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m22 |[0m } [36mfrom[0m [32m"@/lib/knowledge-base"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m23 |[0m
+  [90m24 |[0m [36mconst[0m stack = [
+  [90m25 |[0m   [32m"Next.js"[0m,
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[browser] Uncaught Error: ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/page.tsx:15:1)
+    at <unknown> (Error: (./src/app/page.tsx:15:1)
+⨯ ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  [90m13 |[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m14 |[0m [36mimport[0m { [33mChatShowcase[0m } [36mfrom[0m [32m"@/components/chat-showcase"[0m;
+[31m[1m>[0m [90m15 |[0m [36mimport[0m {
+  [90m   |[0m [31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   dashboardMetrics,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m   featuredProperties,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m18 |[0m   knowledgeBaseDocuments,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m19 |[0m   portfolioHighlights,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m20 |[0m   serviceCards,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m21 |[0m   useCaseTimeline,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m22 |[0m } [36mfrom[0m [32m"@/lib/knowledge-base"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m23 |[0m
+  [90m24 |[0m [36mconst[0m stack = [
+  [90m25 |[0m   [32m"Next.js"[0m,
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[browser] Uncaught Error: ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/page.tsx:15:1)
+    at <unknown> (Error: (./src/app/page.tsx:15:1)
+⨯ ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  [90m13 |[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m14 |[0m [36mimport[0m { [33mChatShowcase[0m } [36mfrom[0m [32m"@/components/chat-showcase"[0m;
+[31m[1m>[0m [90m15 |[0m [36mimport[0m {
+  [90m   |[0m [31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   dashboardMetrics,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m   featuredProperties,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m18 |[0m   knowledgeBaseDocuments,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m19 |[0m   portfolioHighlights,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m20 |[0m   serviceCards,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m21 |[0m   useCaseTimeline,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m22 |[0m } [36mfrom[0m [32m"@/lib/knowledge-base"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m23 |[0m
+  [90m24 |[0m [36mconst[0m stack = [
+  [90m25 |[0m   [32m"Next.js"[0m,
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[browser] Uncaught Error: ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/page.tsx:15:1)
+    at <unknown> (Error: (./src/app/page.tsx:15:1)
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+⨯ ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  [90m13 |[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m14 |[0m [36mimport[0m { [33mChatShowcase[0m } [36mfrom[0m [32m"@/components/chat-showcase"[0m;
+[31m[1m>[0m [90m15 |[0m [36mimport[0m {
+  [90m   |[0m [31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   dashboardMetrics,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m   featuredProperties,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m18 |[0m   knowledgeBaseDocuments,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m19 |[0m   portfolioHighlights,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m20 |[0m   serviceCards,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m21 |[0m   useCaseTimeline,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m22 |[0m } [36mfrom[0m [32m"@/lib/knowledge-base"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m23 |[0m
+  [90m24 |[0m [36mconst[0m stack = [
+  [90m25 |[0m   [32m"Next.js"[0m,
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[browser] Uncaught Error: ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/page.tsx:15:1)
+    at <unknown> (Error: (./src/app/page.tsx:15:1)
+⨯ ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  [90m13 |[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m14 |[0m [36mimport[0m { [33mChatShowcase[0m } [36mfrom[0m [32m"@/components/chat-showcase"[0m;
+[31m[1m>[0m [90m15 |[0m [36mimport[0m {
+  [90m   |[0m [31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   dashboardMetrics,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m   featuredProperties,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m18 |[0m   knowledgeBaseDocuments,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m19 |[0m   portfolioHighlights,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m20 |[0m   serviceCards,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m21 |[0m   useCaseTimeline,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m22 |[0m } [36mfrom[0m [32m"@/lib/knowledge-base"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m23 |[0m
+  [90m24 |[0m [36mconst[0m stack = [
+  [90m25 |[0m   [32m"Next.js"[0m,
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[browser] Uncaught Error: ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/page.tsx:15:1)
+    at <unknown> (Error: (./src/app/page.tsx:15:1)
+⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+[browser] ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist. 
+    at handleErrors (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+    at processMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2835:28)
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2680:13)
+    at WebSocket.handleMessage (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2325:17) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_client_16lnmlo._.js:2774:21)
+⨯ ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  [90m13 |[0m } [36mfrom[0m [32m"lucide-react"[0m;
+  [90m14 |[0m [36mimport[0m { [33mChatShowcase[0m } [36mfrom[0m [32m"@/components/chat-showcase"[0m;
+[31m[1m>[0m [90m15 |[0m [36mimport[0m {
+  [90m   |[0m [31m[1m^^^^^^^[0m
+[31m[1m>[0m [90m16 |[0m   dashboardMetrics,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m17 |[0m   featuredProperties,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m18 |[0m   knowledgeBaseDocuments,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m19 |[0m   portfolioHighlights,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m20 |[0m   serviceCards,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m21 |[0m   useCaseTimeline,
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m22 |[0m } [36mfrom[0m [32m"@/lib/knowledge-base"[0m;
+  [90m   |[0m [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  [90m23 |[0m
+  [90m24 |[0m [36mconst[0m stack = [
+  [90m25 |[0m   [32m"Next.js"[0m,
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+[browser] Uncaught Error: ./src/app/page.tsx:15:1
+Export dashboardMetrics doesn't exist in target module
+  13 | } from "lucide-react";
+  14 | import { ChatShowcase } from "@/components/chat-showcase";
+> 15 | import {
+     | ^^^^^^^
+> 16 |   dashboardMetrics,
+     | ^^^^^^^^^^^^^^^^^^^
+> 17 |   featuredProperties,
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 18 |   knowledgeBaseDocuments,
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^
+> 19 |   portfolioHighlights,
+     | ^^^^^^^^^^^^^^^^^^^^^^
+> 20 |   serviceCards,
+     | ^^^^^^^^^^^^^^^
+> 21 |   useCaseTimeline,
+     | ^^^^^^^^^^^^^^^^^^
+> 22 | } from "@/lib/knowledge-base";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  23 |
+  24 | const stack = [
+  25 |   "Next.js",
+
+The export dashboardMetrics was not found in module [project]/src/lib/knowledge-base.ts [app-rsc] (ecmascript).
+Did you mean to import aboutAgency?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+
+    at <unknown> (Error: ./src/app/page.tsx:15:1)
+    at <unknown> (Error: (./src/app/page.tsx:15:1)
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+Error: Both middleware file "./src\middleware.ts" and proxy file "./src\proxy.ts" are detected. Please use "./src\proxy.ts" only. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+    at ignore-listed frames
+⨯ unhandledRejection: Error: Both middleware file "./src\middleware.ts" and proxy file "./src\proxy.ts" are detected. Please use "./src\proxy.ts" only. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+    at ignore-listed frames
+⨯ unhandledRejection:  Error: Both middleware file "./src\middleware.ts" and proxy file "./src\proxy.ts" are detected. Please use "./src\proxy.ts" only. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+    at ignore-listed frames
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+
+(process:20800): GLib-GObject-CRITICAL **: 15:02:33.611: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:20800): GLib-GObject-CRITICAL **: 15:02:33.612: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:20800): GLib-GObject-CRITICAL **: 15:02:33.613: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:20800): GLib-GObject-CRITICAL **: 15:02:33.613: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:20800): GLib-GObject-CRITICAL **: 15:02:33.614: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:20800): GLib-GObject-CRITICAL **: 15:02:33.614: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:20800): GLib-GObject-CRITICAL **: 15:02:33.614: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+
+(process:20800): GLib-GObject-CRITICAL **: 15:02:33.614: invalid unclassed type '(NULL)' in class cast to '(NULL)'
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+⨯ Error [NeonDbError]: Error connecting to database: TypeError: fetch failed
+    at async (src\lib\db.ts:13:7)
+    at async GET (src\app\api\chat\history\route.ts:11:3)
+  11 |   if (!schemaReady) {
+  12 |     schemaReady = (async () => {
+> 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+     |       ^
+  14 |
+  15 |       await sql`
+  16 |         CREATE TABLE IF NOT EXISTS documents ( {
+  severity: undefined,
+  code: undefined,
+  detail: undefined,
+  hint: undefined,
+  position: undefined,
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: undefined,
+  line: undefined,
+  routine: undefined,
+  sourceError: TypeError: fetch failed
+      at async (src\lib\db.ts:13:7)
+      at async GET (src\app\api\chat\history\route.ts:11:3)
+    11 |   if (!schemaReady) {
+    12 |     schemaReady = (async () => {
+  > 13 |       await sql`CREATE EXTENSION IF NOT EXISTS vector`;
+       |       ^
+    14 |
+    15 |       await sql`
+    16 |         CREATE TABLE IF NOT EXISTS documents ( {
+    [cause]: AggregateError: 
+        at ignore-listed frames {
+      code: 'ECONNREFUSED',
+      [errors]: [Array]
+    }
+  }
+}
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/virtual-t..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="space_grot...">
+                          <body
+                            className="min-h-full flex flex-col"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+    at <unknown> (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:74)
+    at emitPendingHydrationWarnings (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3438:13)
+    at completeWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:6885:102)
+    at runWithFiberInDEV (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:965:131)
+    at completeUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9622:23)
+    at performUnitOfWork (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9551:58)
+    at renderRootConcurrent (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9534:71)
+    at performWorkOnRoot (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2647:64) (file://C:/Users/Admin/Documents/upwork portfolio/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_096_9a-._.js:3439:25)

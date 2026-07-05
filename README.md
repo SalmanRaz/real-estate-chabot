@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Aurora Estates — AI Property Assistant
 
-## Getting Started
+A Next.js real estate website with a floating AI chat widget backed by real
+retrieval-augmented generation. The assistant answers buyer questions from a
+Postgres + pgvector knowledge base, captures leads, remembers chat history
+per visitor, and reports on all of it through a live dashboard.
 
-First, run the development server:
+### What it includes
+
+- Real estate marketing site (listings, about, reviews, contact) with a
+  floating bottom-right chat widget
+- Retrieval-augmented answers: queries are embedded locally
+  (`@xenova/transformers`, no external API key) and matched against a
+  Postgres `pgvector` knowledge base of listings, FAQs, and policies
+- Persistent chat history per visitor (Postgres-backed, restored on reload)
+- Lead capture that saves directly to the database
+- A `/dashboard` page showing live conversation, message, and lead counts
+  (protected with HTTP Basic Auth)
+- OpenRouter's `openrouter/free` router for live chat responses — no paid
+  model required
+
+### Run locally
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Create a Postgres database. The easiest path is Vercel Postgres:
+   - In your Vercel project, open the **Storage** tab and add **Postgres**
+     (this provisions Neon under the hood, which fully supports `pgvector`).
+   - Run `vercel env pull .env.local` to pull `POSTGRES_URL` into your local
+     environment, or copy it manually from the Vercel dashboard.
+
+   If you're not using Vercel, any Postgres instance with the `pgvector`
+   extension available works — just set `POSTGRES_URL` yourself.
+
+3. Copy the example environment file and fill in the values:
+
+```bash
+cp .env.example .env.local
+```
+
+4. Seed the knowledge base (creates tables, generates local embeddings, and
+   loads the listing/FAQ documents):
+
+```bash
+npm run seed
+```
+
+5. Start the app:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000). Visit
+[http://localhost:3000/dashboard](http://localhost:3000/dashboard) to see
+live conversation and lead stats (prompted for `DASHBOARD_USER` /
+`DASHBOARD_PASSWORD`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+OPENROUTER_API_KEY=sk-or-your-key-here
+OPENROUTER_MODEL=openrouter/free
 
-## Learn More
+POSTGRES_URL=postgres://user:password@host/dbname?sslmode=require
 
-To learn more about Next.js, take a look at the following resources:
+DASHBOARD_USER=admin
+DASHBOARD_PASSWORD=change-me
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Embeddings run locally inside the Node.js server (no OpenAI or paid
+  embedding API needed), so the whole stack works on OpenRouter's free
+  models end to end.
+- Re-run `npm run seed` any time you edit `src/lib/knowledge-base.ts` to
+  refresh the stored documents and their embeddings.

@@ -1,0 +1,114 @@
+
+> ai-customer-support-chatbot-rag@0.1.0 dev
+> next dev
+
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.13:3000
+- Environments: .env.local
+✓ Ready in 1993ms
+
+○ Compiling / ...
+ GET / 200 in 11.6s (next.js: 9.3s, application-code: 2.3s)
+ GET / 200 in 351ms (next.js: 16ms, application-code: 335ms)
+ GET / 200 in 703ms (next.js: 15ms, application-code: 688ms)
+ GET / 200 in 509ms (next.js: 20ms, application-code: 489ms)
+○ Compiling /_error ...
+ GET / 500 in 4.3s (next.js: 3.6s, application-code: 745ms)
+ GET / 500 in 101ms (next.js: 57ms, application-code: 44ms)
+✓ Compiled in 245ms
+ GET / 500 in 121ms (next.js: 61ms, application-code: 59ms)
+ GET / 500 in 209ms (next.js: 162ms, application-code: 47ms)
+✓ Compiled in 232ms
+ GET / 500 in 109ms (next.js: 44ms, application-code: 65ms)
+ GET / 500 in 131ms (next.js: 73ms, application-code: 59ms)
+✓ Compiled in 301ms
+ GET / 500 in 129ms (next.js: 73ms, application-code: 56ms)
+▲ Next.js 16.2.10 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.13:3000
+- Environments: .env.local
+✓ Ready in 7.3s
+
+ GET / 500 in 2.2s (next.js: 1540ms, application-code: 656ms)
+✓ Compiled in 1052ms
+ GET / 200 in 4.7s (next.js: 1126ms, application-code: 3.6s)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 500 in 2.2s (next.js: 1181ms, application-code: 982ms)
+✓ Compiled in 173ms
+ GET / 200 in 1236ms (next.js: 519ms, application-code: 716ms)
+ GET / 200 in 336ms (next.js: 18ms, application-code: 318ms)
+ GET / 200 in 1501ms (next.js: 23ms, application-code: 1478ms)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 500 in 3.1s (next.js: 186ms, application-code: 2.9s)
+✓ Compiled in 1311ms
+ GET / 200 in 2.3s (next.js: 460ms, application-code: 1828ms)
+ GET / 200 in 1645ms (next.js: 36ms, application-code: 1608ms)
+ GET / 200 in 1329ms (next.js: 39ms, application-code: 1290ms)
+ GET / 200 in 1340ms (next.js: 311ms, application-code: 1030ms)
+ GET / 200 in 1336ms (next.js: 520ms, application-code: 815ms)
+ GET / 200 in 1610ms (next.js: 721ms, application-code: 889ms)
+ GET / 200 in 1844ms (next.js: 16ms, application-code: 1829ms)
+ GET / 200 in 1567ms (next.js: 33ms, application-code: 1534ms)
+ GET / 200 in 1548ms (next.js: 29ms, application-code: 1519ms)
+ GET / 200 in 1548ms (next.js: 309ms, application-code: 1239ms)
+ GET / 200 in 1814ms (next.js: 569ms, application-code: 1245ms)
+ GET / 200 in 1819ms (next.js: 822ms, application-code: 998ms)
+ GET / 200 in 1370ms (next.js: 24ms, application-code: 1346ms)
+ GET / 200 in 1088ms (next.js: 25ms, application-code: 1063ms)
+ GET / 200 in 798ms (next.js: 19ms, application-code: 778ms)
+ GET / 200 in 349ms (next.js: 18ms, application-code: 330ms)
+ GET / 200 in 800ms (next.js: 268ms, application-code: 532ms)
+ GET / 200 in 1131ms (next.js: 14ms, application-code: 1117ms)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 500 in 801ms (next.js: 149ms, application-code: 652ms)
+ POST /api/chat 500 in 3.0s (next.js: 2.2s, application-code: 802ms)
+  Reload env: .env.local
+✓ Compiled in 327ms
+ GET / 200 in 3.2s (next.js: 589ms, application-code: 2.6s)
+ GET / 200 in 2.3s (next.js: 245ms, application-code: 2.0s)
+ GET / 200 in 541ms (next.js: 35ms, application-code: 505ms)
+ GET / 200 in 546ms (next.js: 318ms, application-code: 228ms)
+ GET / 200 in 2.4s (next.js: 15ms, application-code: 2.4s)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 500 in 1142ms (next.js: 220ms, application-code: 922ms)
+ POST /api/chat 500 in 1183ms (next.js: 459ms, application-code: 723ms)
+ GET / 200 in 363ms (next.js: 11ms, application-code: 351ms)
+ GET /dashboard 200 in 1302ms (next.js: 1132ms, proxy.ts: 10ms, application-code: 160ms)
+ POST /api/chat 500 in 637ms (next.js: 9ms, application-code: 628ms)
+ GET /dashboard 200 in 152ms (next.js: 16ms, proxy.ts: 17ms, application-code: 118ms)
+ POST /api/chat 500 in 530ms (next.js: 5ms, application-code: 525ms)
+ GET / 200 in 462ms (next.js: 15ms, application-code: 447ms)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 500 in 717ms (next.js: 10ms, application-code: 707ms)
+ POST /api/chat 500 in 542ms (next.js: 9ms, application-code: 533ms)
+  Reload env: .env.local
+✓ Compiled in 168ms
+ GET / 200 in 1435ms (next.js: 1184ms, application-code: 251ms)
+ GET / 200 in 2.2s (next.js: 436ms, application-code: 1740ms)
+ GET / 200 in 2.0s (next.js: 17ms, application-code: 2.0s)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 200 in 2.7s (next.js: 212ms, application-code: 2.5s)
+ GET /dashboard 200 in 4.0s (next.js: 86ms, proxy.ts: 297ms, application-code: 3.7s)
+ GET /dashboard 200 in 1122ms (next.js: 14ms, proxy.ts: 14ms, application-code: 1093ms)
+ POST /api/chat 200 in 6.7s (next.js: 483ms, application-code: 6.2s)
+ POST /api/chat 200 in 3.5s (next.js: 8ms, application-code: 3.5s)
+ POST /api/chat 200 in 17.9s (next.js: 10ms, application-code: 17.8s)
+ GET / 200 in 946ms (next.js: 538ms, application-code: 409ms)
+✓ Compiled in 422ms
+ GET / 200 in 1312ms (next.js: 537ms, application-code: 775ms)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 200 in 2.6s (next.js: 253ms, application-code: 2.4s)
+✓ Compiled in 3.1s
+ GET / 200 in 2.4s (next.js: 766ms, application-code: 1653ms)
+ GET / 200 in 1306ms (next.js: 41ms, application-code: 1264ms)
+ GET / 200 in 1022ms (next.js: 34ms, application-code: 988ms)
+ GET / 200 in 1031ms (next.js: 320ms, application-code: 710ms)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 200 in 2.7s (next.js: 283ms, application-code: 2.4s)
+ GET / 200 in 1725ms (next.js: 15ms, application-code: 1710ms)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 200 in 728ms (next.js: 22ms, application-code: 706ms)
+ POST /api/chat 200 in 14.7s (next.js: 488ms, application-code: 14.2s)
+ GET / 200 in 442ms (next.js: 12ms, application-code: 431ms)
+ GET /api/chat/history?sessionId=ffd5423e-6319-46fe-a2f2-b25ae2d35ba6 200 in 711ms (next.js: 7ms, application-code: 704ms)
+ POST /api/chat 200 in 18.0s (next.js: 8ms, application-code: 18.0s)
+ POST /api/leads 200 in 983ms (next.js: 305ms, application-code: 678ms)
+ POST /api/chat 200 in 5.7s (next.js: 7ms, application-code: 5.7s)
+ POST /api/chat 200 in 11.3s (next.js: 7ms, application-code: 11.3s)
+ GET /virtual-tour/skyline%E2%80%91crest 404 in 853ms (next.js: 712ms, application-code: 141ms)
+ GET /dashboard 200 in 3.8s (next.js: 123ms, proxy.ts: 248ms, application-code: 3.4s)
+ POST /api/chat 200 in 5.6s (next.js: 8ms, application-code: 5.6s)
+ POST /api/chat 200 in 4.8s (next.js: 15ms, application-code: 4.8s)
+ POST /api/chat 200 in 11.7s (next.js: 9ms, application-code: 11.7s)
