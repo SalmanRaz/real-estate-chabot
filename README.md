@@ -15,7 +15,7 @@ per visitor, and reports on all of it through a live dashboard.
 - Persistent chat history per visitor (Postgres-backed, restored on reload)
 - Lead capture that saves directly to the database
 - A `/dashboard` page showing live conversation, message, and lead counts
-  (protected with HTTP Basic Auth)
+  (open — no login, since this is a public demo)
 - OpenRouter's `openrouter/free` router for live chat responses — no paid
   model required
 
@@ -57,8 +57,7 @@ npm run dev
 
 Then open [http://localhost:3000](http://localhost:3000). Visit
 [http://localhost:3000/dashboard](http://localhost:3000/dashboard) to see
-live conversation and lead stats (prompted for `DASHBOARD_USER` /
-`DASHBOARD_PASSWORD`).
+live conversation and lead stats.
 
 ### Environment variables
 
@@ -67,9 +66,6 @@ OPENROUTER_API_KEY=sk-or-your-key-here
 OPENROUTER_MODEL=openrouter/free
 
 POSTGRES_URL=postgres://user:password@host/dbname?sslmode=require
-
-DASHBOARD_USER=admin
-DASHBOARD_PASSWORD=change-me
 ```
 
 ### Notes
