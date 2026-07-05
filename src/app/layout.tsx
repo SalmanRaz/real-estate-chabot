@@ -13,9 +13,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Real Estate Lead Qualification Bot",
+  title: "Aurora Estates | Premium Properties & AI Property Assistant",
   description:
-    "A Next.js real estate chatbot experience with a floating widget, knowledge-base retrieval, OpenRouter, and lead qualification.",
+    "Browse premium apartments, villas, and waterfront homes with Aurora Estates, and get instant answers from our AI property assistant.",
 };
 
 export default function RootLayout({

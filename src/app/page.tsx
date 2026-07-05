@@ -17,6 +17,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { ChatShowcase } from "@/components/chat-showcase";
+import { SiteHeader } from "@/components/site-header";
 import {
   aboutAgency,
   featuredProperties,
@@ -25,13 +26,6 @@ import {
   testimonials,
   useCaseTimeline,
 } from "@/lib/knowledge-base";
-
-const navLinks = [
-  { href: "#properties", label: "Listings" },
-  { href: "#about", label: "About" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#contact", label: "Contact" },
-];
 
 const stack = [
   "Next.js",
@@ -74,43 +68,7 @@ const valueProps = [
 export default function Home() {
   return (
     <>
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-[#06111e]/85 backdrop-blur-md">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-12">
-          <Link
-            href="#top"
-            className="flex items-center gap-2 text-lg font-semibold text-white"
-          >
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-amber-300 text-sm font-bold text-slate-950">
-              AE
-            </span>
-            Aurora Estates
-          </Link>
-
-          <nav className="hidden items-center gap-8 text-sm font-medium text-slate-200 md:flex">
-            {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-white">
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="flex items-center gap-4">
-            <a
-              href="tel:+97140001234"
-              className="hidden items-center gap-2 text-sm text-slate-200 sm:flex"
-            >
-              <Phone className="h-4 w-4 text-amber-300" />
-              +971 4 000 1234
-            </a>
-            <Link
-              href="#contact"
-              className="rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-amber-300"
-            >
-              Book a visit
-            </Link>
-          </div>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="top" className="overflow-hidden bg-[#f7f2eb]">
         <div className="relative overflow-hidden bg-[#06111e]">
