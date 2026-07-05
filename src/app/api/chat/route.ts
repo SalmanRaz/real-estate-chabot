@@ -37,12 +37,25 @@ export async function POST(request: Request) {
     sessionId,
   }: { messages: UIMessage[]; sessionId?: string } = await request.json();
   const latestQuestion = extractLatestUserMessage(messages);
-  const contextBlock = await buildContextBlock(latestQuestion);
 
-  if (sessionId) {
-    await ensureSchema();
-    await touchSession(sessionId);
-    await saveMessage(sessionId, "user", latestQuestion);
+  let contextBlock: string;
+  try {
+    contextBlock = await buildContextBlock(latestQuestion);
+
+    if (sessionId) {
+      await ensureSchema();
+      await touchSession(sessionId);
+      await saveMessage(sessionId, "user", latestQuestion);
+    }
+  } catch (error) {
+    console.error("Chat setup failed (retrieval or persistence):", error);
+    return Response.json(
+      {
+        error:
+          "The assistant hit a setup error (knowledge base or database). Check server logs for details.",
+      },
+      { status: 500 },
+    );
   }
 
   const result = streamText({
