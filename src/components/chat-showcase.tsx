@@ -423,6 +423,12 @@ export function ChatShowcase() {
                   <textarea
                     value={input}
                     onChange={(event) => setInput(event.target.value)}
+                    onKeyDown={(event) => {
+                      if (event.key === "Enter" && !event.shiftKey) {
+                        event.preventDefault();
+                        event.currentTarget.form?.requestSubmit();
+                      }
+                    }}
                     rows={2}
                     placeholder="Type here and press enter..."
                     className="min-h-16 w-full resize-none rounded-[1.2rem] border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none placeholder:text-slate-400 focus:border-slate-400"
